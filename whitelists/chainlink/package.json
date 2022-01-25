@@ -1,0 +1,30 @@
+{
+    "name": "@champagneswap/chainlink-whitelist",
+    "version": "0.2.8",
+    "description": "ChampagneSwap Chainlink whitelist",
+    "main": "dist/champagneswap-chainlink.whitelist.json",
+    "scripts": {
+        "build": "rimraf dist && mkdir -p dist && node build.js > dist/sushiswap-chainlink.whitelist.json",
+        "prepublishOnly": "npm run build"
+    },
+    "files": [
+        "dist/champagneswap-chainlink.whitelist.json"
+    ],
+    "keywords": [
+        "champagneswap",
+        "chainlink",
+        "token",
+        "whitelist"
+    ],
+    "author": "Matthew Lilley <hello@matthewlilley.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@champagneswap/prettier-config": "^1.0.0",
+        "@champagneswap/sdk": "5.0.0-canary.119",
+        "@ethersproject/address": "^5.3.0",
+        "@ethersproject/solidity": "^5.3.0",
+        "chai": "^4.2.0",
+        "mocha": "^8.0.1",
+        "rimraf": "^3.0.2"
+    }
+}
